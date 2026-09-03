@@ -27,7 +27,7 @@
 <body>
     <h1>Mitz Mode&copy; Privacy Policy</h1>
 
-    <p>Last updated: September 2, 2026</p>
+    <p>Last updated: September 3, 2026</p>
 
     <h2>Introduction</h2>
     <p>Mitz Mode ("we", "our", or "the app") is committed to protecting your privacy. This policy explains what the app needs to work, which permissions it may request, what stays on your device, and when limited technical data is sent to third-party services.</p>
@@ -88,6 +88,7 @@
         <li><strong>Foreground service (media playback)</strong> &mdash; keeps optional background music playing with a visible notification (Android)</li>
         <li><strong>Network state</strong> &mdash; lets the app avoid unnecessary network work when offline</li>
         <li><strong>Wake lock</strong> (Android) &mdash; supports reliable alarms and media playback</li>
+        <li><strong>Files / share sheet</strong> (when you tap Save, Restore, or Share) &mdash; you pick a save location or a backup file through the system Files picker, or send a file/image through the system share sheet. The app does not browse your photo library or other files on its own</li>
     </ul>
 
     <h2>Data Collection and Storage</h2>
@@ -97,26 +98,36 @@
     <ul>
         <li>Completed mitzvot in the classic Mitz Mode list</li>
         <li>Daily checklist completion state for the embedded Daily Mitzvot Checklist</li>
+        <li>Lifetime checklist history for the Status tab (which checklist items you marked, and on which days) used for streaks, counts, and the Hebrew-month calendar</li>
         <li>Your profile and preferences (for example gender, nusach, marriage/family settings used to tailor checklist items, text size, notification toggles for prayer and mitzvah reminders, kashrut wait timers, Kotel compass visibility, and Israel calendar options)</li>
         <li>Location settings (GPS coordinates or manual city, timezone, and related labels) used for zmanim and the optional compass</li>
+        <li>A per-day Israel vs. diaspora flag for days you open the app, used only on-device for calendar rules (one-day vs. two-day Yom Tov) on the Status calendar</li>
         <li>Custom checklist items you add</li>
         <li>Cached copies of publicly available mitzvah list updates</li>
         <li>Disclaimer acknowledgment, onboarding/tour flags, and similar on-device settings</li>
     </ul>
-    <p>Weekday siddur, blessings, and related liturgy text ship with the app (or as local assets) and are read on your device. Daily checklist items generally reset at the start of a new Jewish day or calendar day as designed in the app. Some seasonal customs may keep a checked state across a short holiday window on your device only. Uninstalling the app removes locally stored data.</p>
+    <p>Weekday siddur, blessings, and related liturgy text ship with the app (or as local assets) and are read on your device. Today&rsquo;s checklist items generally reset at the start of a new Jewish day or calendar day as designed in the app. A separate lifetime history of those checks stays on your device for Status stats until you uninstall the app or restore a backup you choose. Some seasonal customs may keep a checked state across a short holiday window on your device only. Uninstalling the app removes locally stored data.</p>
 
     <h3>What We Do Not Collect for Our Own Use</h3>
     <ul>
         <li>We do not sell your data</li>
         <li>We do not use advertising or marketing analytics</li>
-        <li>We do not access your contacts, photos, microphone, or call logs</li>
+        <li>We do not access your contacts, photo library, microphone, or call logs</li>
         <li>We do not require an account or login</li>
         <li>We do not offer in-app mitzvah submissions or collect names for that purpose</li>
         <li>We do not send your location, compass readings, checklist state, prayer text, or reminder schedules to Beardy Top Productions servers</li>
     </ul>
 
     <h2>Location Data</h2>
-    <p>With your permission, the app uses GPS or a city you select to determine local sunrise, sunset, and halachic times, and (when the compass is shown) to aim toward the Kotel. Coordinates may also be used to infer whether you are in Israel for calendar rules (one-day vs. two-day Yom Tov). This information is kept on your device. It is not transmitted to Beardy Top Productions.</p>
+    <p>With your permission, the app uses GPS or a city you select to determine local sunrise, sunset, and halachic times, and (when the compass is shown) to aim toward the Kotel. Coordinates may also be used to infer whether you are in Israel for calendar rules (one-day vs. two-day Yom Tov). On days you open the app, it may store that Israel vs. diaspora setting for that civil date on your device so past Status calendar days keep the customs you used then. This information is kept on your device. It is not transmitted to Beardy Top Productions.</p>
+
+    <h2>Sharing and History Backup</h2>
+    <p>These steps happen only when you tap them. We do not upload the files to Beardy Top Productions.</p>
+    <ul>
+        <li><strong>Save my history</strong> &mdash; writes a JSON backup of your lifetime mitzvah log to a folder you pick in the system Files picker</li>
+        <li><strong>Restore history</strong> &mdash; reads only the backup file you choose; new entries are added on this device and existing entries are not deleted</li>
+        <li><strong>Send history file / Share</strong> &mdash; opens the system share sheet with a history file and/or a stats image the app generates in its cache (not taken from your photo library). If you send that file or image to another app (Mail, WhatsApp, Files, and similar), that app&rsquo;s privacy policy applies</li>
+    </ul>
 
     <h2>Mitzvah Content Updates</h2>
     <ul>
@@ -126,7 +137,7 @@
     </ul>
 
     <h2>Daily Mitzvot Checklist &amp; Prayer Tools</h2>
-    <p>The embedded checklist helps track daily and seasonal mitzvot. Prayer tools (weekday siddur, food blessings, Birkat Hamazon, and similar) use bundled liturgy on your device. Optional prayer and mitzvah reminders are scheduled locally on your device from your settings and zmanim. Profile and completion data stay local (see <em>Stored Locally on Your Device</em> above). The app is a learning companion and does not provide personal halachic rulings. External Torah resources open only when you tap a link.</p>
+    <p>The embedded checklist helps track daily and seasonal mitzvot. The Status tab summarizes your on-device lifetime history (streaks, counts, and a Hebrew-month calendar). Prayer tools (weekday siddur, food blessings, Birkat Hamazon, and similar) use bundled liturgy on your device. Optional prayer and mitzvah reminders are scheduled locally on your device from your settings and zmanim. Profile, completion, and history data stay local (see <em>Stored Locally on Your Device</em> above) unless you choose to save or share a backup. The app is a learning companion and does not provide personal halachic rulings. External Torah resources open only when you tap a link.</p>
 
     <h2>Error Tracking</h2>
     <ul>
